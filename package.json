@@ -1,0 +1,28 @@
+{
+  "name": "@jarven/cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@jarven/eslint-config": "^0.0.1",
+    "@types/minimist": "^1.2.2",
+    "@types/node": "^20.5.1",
+    "@types/prompts": "^2.4.4",
+    "chalk": "^5.3.0",
+    "eslint": "^8.47.0",
+    "minimist": "^1.2.8",
+    "prompts": "^2.4.2",
+    "typescript": "^5.1.6",
+    "unbuild": "^1.2.1"
+  }
+}
